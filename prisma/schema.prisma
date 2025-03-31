@@ -13,6 +13,7 @@ model stockIn {
   name String
   mark String
   group String
+  quantity Int
   entry DateTime @default(now())
 }
 
