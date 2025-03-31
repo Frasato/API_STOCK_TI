@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model stockIn {
+  id String @id @default(uuid())
+  barcode String
+  name String
+  mark String
+  group String
+  entry DateTime @default(now())
+}
