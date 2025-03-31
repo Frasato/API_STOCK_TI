@@ -23,5 +23,6 @@ model stockOut {
   name String
   mark String
   group String
+  quantity Int
   out DateTime @default(now())
 }
