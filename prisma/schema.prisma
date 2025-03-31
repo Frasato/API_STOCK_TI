@@ -15,3 +15,12 @@ model stockIn {
   group String
   entry DateTime @default(now())
 }
+
+model stockOut {
+  id String @id @default(uuid())
+  barcode String
+  name String
+  mark String
+  group String
+  out DateTime @default(now())
+}
